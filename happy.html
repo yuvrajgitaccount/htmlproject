@@ -1,0 +1,55 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    
+    
+    
+    
+    
+    </head>
+
+    <div class="container">
+    
+    <div id="loaded">loading the page</div>
+    <button class="btn  btn-primary btnclick">click</button>
+    </div>
+
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+        
+      $('.btnclick').click(function(){
+          
+        $.get('smita.html',function(data,status){
+            
+            $('#loaded').html(data);
+            alert(status);
+            
+            
+        });  
+          
+          
+      }); 
+        
+        
+        
+    });
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+</html>

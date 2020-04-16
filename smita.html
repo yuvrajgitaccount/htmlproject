@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    
+    <title>Im in here</title>
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    </head>
+
+    <body>
+    <div class="container">
+        <div id="loader">i mloading</div>
+        <button class="btn btn-success" id="btnclick">click</button>
+        
+        
+        
+        
+        </div>
+    
+    
+    
+        
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+           $('#btnclick').click(function(){
+               
+               
+               $.get('happy.html',function(data,status){
+                   
+                   $('#loader').html(data);
+                   console.log(status);
+                   
+                   
+               });
+    
+               
+           }); 
+            
+            
+            
+        });
+        
+        
+        </script>
+    
+    </body>
+
+
+
+</html>

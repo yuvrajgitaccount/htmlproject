@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    
+    
+    </head>
+    
+    
+   <body>
+       
+      <div class="container">
+       
+       <div id="loaded">this going to load</div>
+       
+       <button class="btn btn-success" id="clickbtn">Click</button>
+       
+       </div>
+       
+       <script type="text/javascript">
+       
+       $(document).ready(function(){
+         $('#clickbtn').click(function(){
+             
+           $('#loaded').load('happy.html',function(){
+               
+               alert("this is done");
+               
+               
+           });
+             
+             
+         })  
+           
+           
+           
+           
+       });
+       
+       
+       
+       
+       </script>
+       
+       
+       
+    
+</body>
+</html>
